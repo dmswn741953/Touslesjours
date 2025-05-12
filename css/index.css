@@ -222,6 +222,15 @@ header nav .menu a {
   top: 100px;
   left: 100px;
 }
+.give::before {
+  content: "";
+  position: absolute;
+  background: url(../images/give_bread2.png) center/cover no-repeat;
+  width: 278px;
+  height: 131px;
+  right: 430px;
+  top: 180px;
+}
 .give h1 {
   font-size: 40px;
   text-align: center;
