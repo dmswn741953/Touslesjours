@@ -1,0 +1,244 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.wrap {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+header nav {
+  background: #0e4832;
+  height: 140px;
+}
+header nav ul:first-child {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  height: 87px;
+  gap: 70px;
+  border-bottom: 1px solid #ffffff54;
+}
+header nav ul:first-child li:first-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+header nav ul:first-child li:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+header nav ul:first-child li:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header nav ul:first-child li:last-child a {
+  font-size: 14px;
+  color: #fffa;
+}
+header nav ul:first-child li:last-child a:nth-child(4) {
+  border: 1px solid #fffa;
+  padding: 0 10px;
+}
+header nav .menu {
+  display: flex;
+  height: 53px;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+header nav .menu a {
+  color: #fff;
+}
+.main_bg {
+  width: 100%;
+  height: 832px;
+  position: relative;
+  background: url(../images/bg1.png) center/cover no-repeat;
+}
+.main_bg p {
+  position: absolute;
+  width: 1368px;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+.main_bg p img {
+  width: 100%;
+}
+.intro {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  background: url(../images/introBg.jpg) center -200px / cover no-repeat fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 650px;
+  background: #000;
+  opacity: 0.4;
+}
+.intro p {
+  position: relative;
+  font-size: 40px;
+  color: #fff;
+  z-index: 1;
+}
+.reco {
+  height: 650px;
+  background: #f8f4e9;
+  position: relative;
+  z-index: 1;
+}
+.reco h1 {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
+}
+.reco .swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.reco .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reco .swiper-slide .product {
+  width: 312px;
+  height: 312px;
+  display: flex;
+  align-items: center;
+}
+.reco .swiper-slide .product img {
+  display: block;
+  width: 312px;
+  object-fit: cover;
+}
+.reco .product_kind {
+  display: flex;
+  justify-content: center;
+  gap: 170px;
+  margin-top: 30px;
+}
+.ingredient {
+  position: relative;
+  height: 985px;
+  background: #fafaf9;
+  overflow: hidden;
+  padding: 100px;
+  box-sizing: border-box;
+}
+.ingredient::after {
+  content: "";
+  position: absolute;
+  width: 1064px;
+  height: 662px;
+  top: -100px;
+  right: -200px;
+  background: url(../images/milk.png) center/cover no-repeat;
+}
+.ingredient::before {
+  content: "";
+  position: absolute;
+  width: 1330px;
+  height: 757px;
+  left: -150px;
+  bottom: -100px;
+  background: url(../images/wheat.png) center/cover no-repeat;
+}
+.ingredient h1 {
+  font-size: 40px;
+}
+.ingredient ul {
+  position: relative;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ingredient ul li:nth-child(2) {
+  align-self: flex-end;
+}
+.ingredient ul li:nth-child(3) {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #e3cfb8;
+  border-radius: 30px;
+  background: #e3cfb8;
+  transition: 0.5s;
+}
+.ingredient ul li:nth-child(3):hover {
+  background: #d3bca1;
+}
+.ingredient ul li:nth-child(3) a {
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 22px;
+}
+.ingredient ul li p {
+  font-size: 25px;
+}
+.give {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background: url(../images/give_bg.jpg) bottom/cover no-repeat;
+}
+.give::after {
+  content: "";
+  position: absolute;
+  background: url(../images/give_bread.png) center/cover no-repeat;
+  width: 500px;
+  height: 250px;
+  top: 100px;
+  left: 100px;
+}
+.give h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+.give .giveTxt {
+  width: 100%;
+  height: 542px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 40px;
+  box-sizing: border-box; */
+}
+.give p {
+  text-align: center;
+  font-size: 25px;
+  line-height: 45px;
+}
